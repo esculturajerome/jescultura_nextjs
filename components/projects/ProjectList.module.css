@@ -1,0 +1,8 @@
+.project_grid {
+  -webkit-columns: 3;
+  -moz-columns: 3;
+  columns: 3;
+  -webkit-column-gap: 2.35%;
+  -moz-column-gap: 2.35%;
+  column-gap: 2.35%;
+}
