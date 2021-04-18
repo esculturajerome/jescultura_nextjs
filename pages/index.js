@@ -1,5 +1,5 @@
 import ProjectList from "../components/projects/ProjectList";
-import SideBar from "../components/SideBar";
+import SideBar from "../components/Sidebar/SideBar";
 import { getAllProjects } from "../projects-data";
 
 export default function HomePage() {

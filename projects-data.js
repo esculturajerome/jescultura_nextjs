@@ -67,7 +67,7 @@ const PROJECTS_DATA = [
     category: "Design",
     coverImage: "images/works/finest-brochure.png",
     projectImg1: "/images/works/finest-brochure.png",
-    projectImg2: "/images/project/finestbrochure1.png",
+    projectImages: ["/images/project/finestbrochure1.png"],
   },
   {
     id: "7",

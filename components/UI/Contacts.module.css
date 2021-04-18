@@ -1,0 +1,35 @@
+.contact {
+  margin: 50px 0;
+}
+
+.contact .title {
+  display: block;
+  margin: 0 0 5px !important;
+  color: #bfbfbf !important;
+  font-weight: 400 !important;
+  font-size: 11px !important;
+  letter-spacing: 0.4px !important;
+  text-transform: uppercase !important;
+}
+
+.contact ul li:last-child {
+  padding-bottom: 0;
+}
+.contact ul li:first-child {
+  padding-top: 0;
+}
+.contact ul li {
+  line-height: 1.7;
+  font-size: 13px;
+  padding: 3px 0;
+}
+
+.contact a {
+  padding-left: 5px;
+}
+
+@media (max-width: 540px) {
+  .contact {
+    text-align: center;
+  }
+}

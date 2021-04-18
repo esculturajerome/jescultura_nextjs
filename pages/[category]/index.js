@@ -1,4 +1,6 @@
 import { useRouter } from "next/router";
+import SideBar from "../../components/Sidebar/SideBar";
+import ProjectList from "../../components/projects/ProjectList";
 import { getProjectByCategory } from "../../projects-data";
 
 export default function ProjectDetailPage() {
@@ -12,10 +14,13 @@ export default function ProjectDetailPage() {
   }
 
   return (
-    <div>
-      {projects.map((project) => (
-        <h1 key={project.id}>{project.name}</h1>
-      ))}
+    <div className="container">
+      <div className="sidebar">
+        <SideBar />
+      </div>
+      <div className="main">
+        <ProjectList items={projects} />
+      </div>
     </div>
   );
 }

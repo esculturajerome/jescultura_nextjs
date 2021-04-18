@@ -6,3 +6,22 @@
   -moz-column-gap: 2.35%;
   column-gap: 2.35%;
 }
+
+@media (max-width: 992px) {
+  .project_grid {
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 540px) {
+  .project_grid {
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1;
+  }
+}
