@@ -6,8 +6,8 @@ export default function Gallery(props) {
 
   const propsSpring = useSpring({
     opacity: 1,
-    marginRight: 0,
-    from: { opacity: 0, marginRight: -70 },
+    from: { opacity: 0 },
+    delay: 300,
   });
 
   if (images) {

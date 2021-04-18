@@ -13,7 +13,6 @@ export default function Details(props) {
     opacity: 1,
     marginTop: 0,
     from: { opacity: 0, marginTop: 70 },
-    delay: 200,
   });
   return (
     <animated.div className={Class.details} style={propsSpring}>
