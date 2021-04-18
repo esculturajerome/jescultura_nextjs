@@ -1,4 +1,5 @@
 import Class from "./Details.module.css";
+import { useSpring, animated } from "react-spring";
 
 export default function Details(props) {
   const { name, category, desc, dateCreated, url } = props;
@@ -8,8 +9,14 @@ export default function Details(props) {
     year: "numeric",
   });
 
+  const propsSpring = useSpring({
+    opacity: 1,
+    marginTop: 0,
+    from: { opacity: 0, marginTop: 70 },
+    delay: 200,
+  });
   return (
-    <div className={Class.details}>
+    <animated.div className={Class.details} style={propsSpring}>
       <h2>{name}</h2>
       <ul className={Class.category}>
         <li>{category}</li>
@@ -31,6 +38,6 @@ export default function Details(props) {
           </a>
         </div>
       </div>
-    </div>
+    </animated.div>
   );
 }

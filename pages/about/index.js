@@ -1,5 +1,5 @@
 import SideBar from "../../components/Sidebar/SideBar";
 
 export default function About() {
-  return <SideBar />;
+  return <h1>About Me</h1>;
 }
