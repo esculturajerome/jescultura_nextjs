@@ -15,7 +15,7 @@ export default function Gallery(props) {
       <animated.div style={propsSpring}>
         <div className={Class.gallery}>
           {images.map((image) => (
-            <div>
+            <div key={image}>
               <img src={image} />
             </div>
           ))}
