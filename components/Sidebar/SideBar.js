@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Contacts from "../UI/Contacts";
+import Contacts from "../UI/Contacts/Contacts";
 import Class from "./SideBar.module.css";
 
 export default function SideBar() {
@@ -18,23 +18,23 @@ export default function SideBar() {
       </Link>
       <nav>
         <ul>
-          <li>
-            <Link href="/">Work</Link>
-          </li>
-          <li>
-            <Link href="/Website">- Website</Link>
-          </li>
-          <li>
-            <Link href="/Design">- Design</Link>
-          </li>
-          <li>
-            <Link href="/Application">- Application</Link>
-          </li>
+          <Link href="/">
+            <li>Work</li>
+          </Link>
+          <Link href="/Website">
+            <li>- Website</li>
+          </Link>
+          <Link href="/Design">
+            <li>- Design</li>
+          </Link>
+          <Link href="/Application">
+            <li>- Application</li>
+          </Link>
         </ul>
         <ul>
-          <li>
-            <Link href="/about">About</Link>
-          </li>
+          <Link href="/about">
+            <li>About</li>
+          </Link>
         </ul>
       </nav>
       <Contacts />

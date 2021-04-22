@@ -1,10 +1,8 @@
 import { useRouter } from "next/router";
 import SideBar from "../../components/Sidebar/SideBar";
-import Details from "../../components/UI/Details";
-import Gallery from "../../components/UI/Gallery";
+import Details from "../../components/UI/Details/Details";
+import Gallery from "../../components/UI/Gallery/Gallery";
 import { getProjectById } from "../../projects-data";
-
-import Class from "./ProjectDetails.module.css";
 
 export default function ProjectDetailPage() {
   const router = useRouter();

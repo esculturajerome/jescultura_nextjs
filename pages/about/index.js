@@ -1,5 +1,14 @@
-import SideBar from "../../components/Sidebar/SideBar";
+import { Fragment } from "react";
+import Header from "../../components/Header/Header";
+import AboutMe from "../../components/UI/AboutMe/AboutMe";
+import ProfileBanner from "../../components/UI/ProfileBanner/ProfileBanner";
 
 export default function About() {
-  return <h1>About Me</h1>;
+  return (
+    <Fragment>
+      <Header />
+      <ProfileBanner />
+      <AboutMe />
+    </Fragment>
+  );
 }

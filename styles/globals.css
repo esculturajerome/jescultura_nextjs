@@ -31,7 +31,7 @@ ul {
 p {
   color: #0e0e0e;
   line-height: 1.8;
-  font-size: clamp(1.4vh, 1.8vh, 2.2vh);
+  font-size: clamp(14px, 1.8vh, 18px);
 }
 
 h2 {

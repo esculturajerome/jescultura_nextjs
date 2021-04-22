@@ -15,9 +15,6 @@
   }
 }
 
-@media (max-width: 768px) {
-}
-
 @media (max-width: 540px) {
   .project_grid {
     -webkit-columns: 1;

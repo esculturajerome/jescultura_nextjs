@@ -1,5 +1,6 @@
 import Class from "./Details.module.css";
 import { useSpring, animated } from "react-spring";
+import { Fragment } from "react";
 
 export default function Details(props) {
   const { name, category, desc, dateCreated, url } = props;
@@ -23,19 +24,23 @@ export default function Details(props) {
       <p>{desc}</p>
       <div className={Class.row}>
         <div className={Class.date}>
-          <h5 className={Class.text}>Date</h5>
           {convertedDate == "Invalid Date" ? (
-            <p>On going</p>
+            <h5 className={Class.text}>Under Construction</h5>
           ) : (
-            <p>{convertedDate}</p>
+            <Fragment>
+              <h5 className={Class.text}>Date Created</h5>
+              <p>{convertedDate}</p>
+            </Fragment>
           )}
         </div>
-        <div className={Class.link}>
-          <h5 className={Class.text}>Link</h5>
-          <a href={url} rel="noopener noreferrer" target="_blank">
-            {name}
-          </a>
-        </div>
+        {url && (
+          <div className={Class.link}>
+            <h5 className={Class.text}>Link</h5>
+            <a href={url} rel="noopener noreferrer" target="_blank">
+              {name}
+            </a>
+          </div>
+        )}
       </div>
     </animated.div>
   );

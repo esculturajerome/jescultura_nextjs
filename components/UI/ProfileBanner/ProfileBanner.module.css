@@ -1,0 +1,46 @@
+.ProfileBanner {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background: #f3f3f3;
+  place-items: center;
+}
+
+.ProfileSection {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 3rem;
+  width: 100%;
+  max-width: 1300px;
+}
+.ProfileText {
+  flex: 1 1 50%;
+  align-self: center;
+}
+.ProfileText h1 {
+  margin: 0;
+  padding-top: 2rem;
+  font-size: min(max(22px, 4vw), 32px);
+}
+.ProfileText p {
+  margin: 0;
+}
+.ProfileImage {
+  flex: 1 1 50%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.ProfileImage img {
+  width: 100%;
+  max-width: 450px;
+  padding-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .ProfileSection {
+    padding: 0 2rem;
+  }
+  .ProfileText {
+    flex: max-content;
+  }
+}

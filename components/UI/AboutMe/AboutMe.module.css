@@ -1,0 +1,34 @@
+.AboutSection {
+  display: flex;
+  justify-content: center;
+  background: #000;
+  width: 100%;
+}
+
+.AboutSection p {
+  color: #fff;
+}
+
+.AboutMe {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  justify-content: center;
+  width: 100%;
+  max-width: 1300px;
+  padding: 3rem 3rem 6rem;
+}
+
+.RightSection {
+  grid-column: 2 / 4;
+}
+
+@media (max-width: 768px) {
+  .AboutMe {
+    grid-template-columns: auto;
+    padding: 3rem 2rem 6rem;
+  }
+  .RightSection {
+    grid-column: 1;
+  }
+}
